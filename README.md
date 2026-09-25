@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/vaxicy/velvet-night-theme/main/logo/logo128.png" alt="Velvet Night Theme icon" width="88">
+  <img src="https://raw.githubusercontent.com/vaxicy/velvet-night-theme/main/logo/logo128.png?rev=045398d9" alt="Velvet Night Theme icon" width="88">
   <h1>Velvet Night Theme</h1>
   <p>A deep, low-lit Chrome theme in wine, muted plum and dusty rose.</p>
   <p>
@@ -62,9 +62,9 @@ Search for **Velvet Night Theme** in the Chrome Web Store and install it.
 
 ## Preview
 
-![Velvet Night Theme browser preview](https://raw.githubusercontent.com/vaxicy/velvet-night-theme/main/store-assets/screenshots/en/screenshot-1-browser.png)
+![Velvet Night Theme browser preview](https://raw.githubusercontent.com/vaxicy/velvet-night-theme/main/store-assets/screenshots/en/screenshot-1-browser.png?rev=24bd3e02)
 
-![Velvet Night Theme color palette](https://raw.githubusercontent.com/vaxicy/velvet-night-theme/main/store-assets/screenshots/en/screenshot-2-introduction.png)
+![Velvet Night Theme color palette](https://raw.githubusercontent.com/vaxicy/velvet-night-theme/main/store-assets/screenshots/en/screenshot-2-introduction.png?rev=adfda8df)
 
 ## Files
 

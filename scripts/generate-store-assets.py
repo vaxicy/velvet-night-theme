@@ -16,7 +16,9 @@ was sampled with scripts/sample-reference-colors.py.
 """
 from pathlib import Path
 import base64
+import hashlib
 import json
+import re
 
 from PIL import Image
 from playwright.sync_api import sync_playwright
@@ -363,6 +365,36 @@ JOBS = [
 ]
 
 
+README = ROOT / 'README.md'
+README_ASSETS = [
+    'logo/logo128.png',
+    'store-assets/screenshots/en/screenshot-1-browser.png',
+    'store-assets/screenshots/en/screenshot-2-introduction.png',
+]
+
+
+def sync_readme_revisions():
+    """Stamp ?rev=<content hash> onto every raw image URL in the README.
+
+    Re-rendering an image is not enough: GitHub's raw/camo CDN and the viewer's
+    browser both cache hard, so the reference itself has to change before anyone
+    sees a new render. Bumping the stamp per content hash keeps it honest.
+    """
+    text = README.read_text('utf-8')
+    for rel in README_ASSETS:
+        path = ROOT / rel
+        if not path.exists():
+            print(f'  skipped missing {rel}')
+            continue
+        rev = hashlib.md5(path.read_bytes()).hexdigest()[:8]
+        pattern = re.compile(
+            r'(https://raw\.githubusercontent\.com/[^\s")]*' + re.escape(path.name) + r')(\?rev=[0-9a-f]+)?')
+        text, hits = pattern.subn(lambda m: f'{m.group(1)}?rev={rev}', text)
+        assert hits == 1, f'{rel}: expected exactly one README reference, found {hits}'
+        print(f'  README {path.name} -> rev={rev}')
+    README.write_text(text, 'utf-8')
+
+
 def main():
     with sync_playwright() as p:
         engine = p.chromium.launch(headless=True)
@@ -390,6 +422,7 @@ def main():
             temp.replace(destination)
             print(f'Rendered {name} {w}x{h}')
         engine.close()
+    sync_readme_revisions()
 
 
 if __name__ == '__main__':
