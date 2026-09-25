@@ -61,6 +61,11 @@ and rasterised once per output with a matching device scale factor
 Content that belongs to the browser user (their tabs, bookmarks and extensions)
 is redrawn as generic English art of the same size — nothing personal ships.
 
+screenshot-2 sits on a neutral `#2B262E` gallery backdrop that is deliberately
+**not** one of the theme colours: painted with `ntp_background` the "Deep Plum"
+swatch dissolved into the page. Every card also carries a 1px light border for
+the same reason.
+
 ## Regenerate
 
 ```bash

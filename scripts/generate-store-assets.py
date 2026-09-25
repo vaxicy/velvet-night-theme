@@ -78,6 +78,10 @@ VARS = f""":root{{
   --pill:{PILL_BG};
   --pill-fg:{PILL_FG};
   --ui-text:#B9B4BB;
+  /* neutral gallery backdrop for screenshot-2 only: deliberately NOT one of
+     the theme colours, otherwise the swatch painted with that colour would
+     dissolve into the page */
+  --sheet:#2B262E;
 }}"""
 
 CSS = VARS + """
@@ -155,7 +159,7 @@ svg{display:block}
 .marquee .frame .window{transform:scale(.740741);transform-origin:top left}
 
 /* ================= screenshot 2: introduction + colour cards ================= */
-.intro{width:1280px;height:800px;background:var(--ntp);padding:64px 74px;position:relative}
+.intro{width:1280px;height:800px;background:var(--sheet);padding:64px 74px;position:relative}
 .intro .kicker{font-size:12px;letter-spacing:4px;color:var(--tile-label)}
 .intro h1{font-family:Georgia,serif;font-weight:normal;font-size:54px;margin:15px 0 0;color:var(--ntp-text)}
 .intro .lead{font-size:21px;margin:13px 0 0;color:var(--tab-bg-text)}
