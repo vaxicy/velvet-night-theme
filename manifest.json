@@ -1,0 +1,165 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "Velvet Night Theme",
+  "description": "Luxurious and mysterious like a velvet cloth.",
+  "theme": {
+    "colors": {
+      "frame": [
+        105,
+        54,
+        60
+      ],
+      "frame_inactive": [
+        121,
+        69,
+        72
+      ],
+      "toolbar": [
+        114,
+        99,
+        115
+      ],
+      "background_tab": [
+        80,
+        63,
+        66
+      ],
+      "tab_text": [
+        242,
+        235,
+        236
+      ],
+      "tab_background_text": [
+        199,
+        167,
+        171
+      ],
+      "toolbar_button_icon": [
+        238,
+        227,
+        229
+      ],
+      "button_background": [
+        115,
+        93,
+        121
+      ],
+      "omnibox_background": [
+        61,
+        52,
+        66
+      ],
+      "omnibox_text": [
+        236,
+        229,
+        230
+      ],
+      "bookmark_text": [
+        223,
+        203,
+        207
+      ],
+      "ntp_background": [
+        27,
+        17,
+        34
+      ],
+      "ntp_text": [
+        243,
+        239,
+        240
+      ],
+      "ntp_link": [
+        163,
+        191,
+        244
+      ],
+      "frame_incognito": [
+        85,
+        44,
+        48
+      ],
+      "frame_incognito_inactive": [
+        108,
+        62,
+        64
+      ],
+      "background_tab_inactive": [
+        80,
+        63,
+        66
+      ],
+      "background_tab_incognito": [
+        63,
+        50,
+        52
+      ],
+      "background_tab_incognito_inactive": [
+        80,
+        63,
+        66
+      ],
+      "tab_background_text_inactive": [
+        199,
+        167,
+        171
+      ],
+      "tab_background_text_incognito": [
+        199,
+        167,
+        171
+      ],
+      "tab_background_text_incognito_inactive": [
+        199,
+        167,
+        171
+      ],
+      "ntp_header": [
+        243,
+        239,
+        240
+      ],
+      "toolbar_text": [
+        223,
+        203,
+        207
+      ]
+    },
+    "tints": {
+      "buttons": [
+        0.823,
+        0.075,
+        0.42
+      ],
+      "frame": [
+        0.98,
+        0.321,
+        0.312
+      ],
+      "frame_inactive": [
+        0.99,
+        0.274,
+        0.373
+      ],
+      "frame_incognito": [
+        0.984,
+        0.318,
+        0.253
+      ],
+      "frame_incognito_inactive": [
+        0.993,
+        0.271,
+        0.333
+      ],
+      "background_tab": [
+        0.971,
+        0.119,
+        0.28
+      ]
+    },
+    "properties": {
+      "ntp_logo_alternate": 1
+    }
+  }
+}

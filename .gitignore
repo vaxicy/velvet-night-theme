@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+Cached Theme.pak
+.codebuddy/
+commit_msg.txt
+store-assets/references/

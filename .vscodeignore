@@ -1,0 +1,7 @@
+.codebuddy/
+Cached Theme.pak
+store-assets/references/
+scripts/
+__pycache__/
+*.pyc
+commit_msg.txt
